@@ -20,8 +20,20 @@ if(isset($_GET['country']))
 }
 
 ?>
-<ul>
-<?php foreach ($results as $row): ?>
-  <li><?= $row['name'] . ' is ruled by ' . $row['head_of_state']; ?></li>
+
+<table>
+  <tr>
+      <th>Name</th>
+      <th>Continent</th>
+      <th>Independence</th>
+      <th>Head of State</th>
+  </tr> 
+<?php foreach ($results as $column): ?>
+  <tr>
+      <td><?= $column['name'];?></td>
+      <td><?= $column['continent'];?></td>
+      <td><?= $column['independence_year'];?></td>
+      <td><?= $column['head_of_state'];?></td>
+  </tr>
 <?php endforeach; ?>
-</ul>
+</table>
