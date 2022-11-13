@@ -34,10 +34,23 @@ h1{
     width: 350px;
 }
 
+.btns{
+    display: flex;
+    flex-direction: row;
+}
+
+
 #lookup{
     margin-top: 5px;
-    margin-left: 620px;
+    margin-left: 570px;
     width: 100px;
+}
+
+#lookup_cities{
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 100px;
+    white-space: nowrap;
 }
 
 table{
